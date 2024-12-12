@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Chatbot</title>
+	</head>
+	<body>
+		<div class="chatbot-body bg-gray-600 w-screen h-screen flex flex-col">
+			<main
+				class="chatbot-main relative flex flex-col h-full w-full overflow-auto"
+			>
+				<!-- Title Section -->
+				<div class="chatbot-title p-7">
+					<h1 class="text-3xl text-white">Chatbot</h1>
+				</div>
+
+				<!-- Chat Container -->
+				<div
+					class="chat-container flex flex-col h-full mx-auto w-10/12 overflow-y-auto"
+				>
+					<!-- Bot Message -->
+					<div
+						class="chatbot-message-container flex items-start space-x-4 my-4"
+					>
+						<div class="chatbot-logo">
+							<img src="./img/logo.png" alt="logo" class="w-12 h-12" />
+						</div>
+						<div
+							class="chatbot-message-bot h-auto rounded-3xl text-base bg-transparent text-white px-5 py-3"
+						>
+							<p>Hello, I'm a chatbot. How can I help you today?</p>
+						</div>
+					</div>
+
+					<!-- User Message -->
+					<div
+						class="chatbot-message-container flex justify-end items-start space-x-4 my-4"
+					>
+						<div
+							class="chatbot-message-user h-auto rounded-3xl bg-gray-700 shadow-lg text-white px-5 py-3"
+						>
+							<p>Hi, I need help with my order.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer Section -->
+				<div class="chatbot-footer flex justify-center items-center p-4">
+					<div
+						class="flex items-center rounded-lg shadow-lg w-10/12 bg-gray-700 p-4"
+					>
+						<form action="" class="flex-grow">
+							<input
+								type="text"
+								name="message"
+								id="message"
+								placeholder="Type your message here"
+								class="chatbot-input w-full h-10 rounded-3xl bg-[#2f2f2f] text-white px-5 focus-visible:outline-none border-0"
+							/>
+						</form>
+						<button
+							type="button"
+							class="chatbot-button bg-white text-black rounded-full w-10 h-10 flex justify-center items-center ml-4 shadow-lg"
+						>
+							&#8593;
+						</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
